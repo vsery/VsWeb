@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#index_navigation" aria-expanded="false">
@@ -53,7 +53,7 @@
 </template>
 <script>
 export default {
-    name: 'hello',
+    name: 'navigation',
     data() {
         return {
             logo: {
@@ -70,7 +70,7 @@ export default {
             }, {
                 text: 'Blog',
                 desc: '博客',
-                icon: 'blog',
+                icon: 'pied-piper',
                 path: '',
                 children: [{
                     text: 'Front end Engineer',
@@ -152,7 +152,7 @@ export default {
             }, {
                 text: 'work',
                 desc: '项目/工作/产品',
-                icon: 'work',
+                icon: 'product-hunt',
                 path: '',
                 children: [{
                     text: 'MAll',
@@ -207,3 +207,8 @@ export default {
 }
 
 </script>
+<style>
+    #navigation {
+        margin-bottom: 0;
+    }
+</style>

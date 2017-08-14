@@ -11,6 +11,11 @@ var express = require('express')
 var webpack = require('webpack')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = require('./webpack.dev.conf')
+var bodyParser = require('body-parser');
+var multer = require('multer');
+var fs = require('fs');
+
+
 
 // default port where dev server listens for incoming traffic
 var port = process.env.PORT || config.dev.port
@@ -20,7 +25,17 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 // https://github.com/chimurai/http-proxy-middleware
 var proxyTable = config.dev.proxyTable
 
-var app = express()
+var app = express();
+
+var apiRoutes = express.Router();
+
+apiRoutes.get('/index', function(req, res) {
+    alert("index");
+});
+
+// 统一 API 路由
+app.use('/api', apiRoutes);
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

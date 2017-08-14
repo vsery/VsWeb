@@ -1,0 +1,333 @@
+{
+    "pageSkin": "default",
+    "logo":
+    {
+        "type": "string",
+        "text": "Vsery",
+        "pic": ""
+    },
+     "menus": [
+    {
+        "text": "Index",
+        "desc": "首页",
+        "icon": "home",
+        "path": "#/index",
+        "children": []
+    },
+    {
+        "text": "Blog",
+        "desc": "博客",
+        "icon": "pied-piper",
+        "path": "",
+        "children": [
+        {
+            "text": "Front end Engineer",
+            "desc": "前端程序员",
+            "icon": "home",
+            "path": "#/blog/f2e",
+        },
+        {
+            "text": "Back end Engineer",
+            "desc": "后端程序员",
+            "icon": "home",
+            "path": "#/blog/b2e",
+        },
+        {
+            "text": "Soul Soother",
+            "desc": "心灵鸡汤",
+            "icon": "home",
+            "path": "#/blog/journal",
+        },
+        {
+            "text": "Inspiration Design",
+            "desc": "灵感设计",
+            "icon": "home",
+            "path": "#/blog/id",
+        }]
+    },
+    {
+        "text": "Books",
+        "desc": "书籍",
+        "icon": "book",
+        "path": "",
+        "children": [
+        {
+            "text": "jQuery",
+            "desc": "jQuery APi & DOC",
+            "icon": "book",
+            "path": "#/books/jquery",
+        },
+        {
+            "text": "Bootstrap",
+            "desc": "Bootstrap API & DOC",
+            "icon": "book",
+            "path": "#/books/bootstrap",
+        },
+        {
+            "text": "Vue",
+            "desc": "Vue API & DOC",
+            "icon": "book",
+            "path": "#/books/vue",
+        },
+        {
+            "text": "Angular",
+            "desc": "Angular API & DOC",
+            "icon": "book",
+            "path": "#/books/angular",
+        },
+        {
+            "text": "Node",
+            "desc": "Node API & DOC",
+            "icon": "book",
+            "path": "#/books/Node",
+        },
+        {
+            "text": "GIt",
+            "desc": "GIt API & DOC",
+            "icon": "book",
+            "path": "#/books/GIt",
+        },
+        {
+            "text": "Gulp",
+            "desc": "Gulp API & DOC",
+            "icon": "book",
+            "path": "#/books/Gulp",
+        },
+        {
+            "text": "W3C",
+            "desc": "W3C API & DOC",
+            "icon": "book",
+            "path": "#/books/W3C",
+        },
+        {
+            "text": "Browser",
+            "desc": "Browser API & DOC",
+            "icon": "book",
+            "path": "#/books/Browser",
+        },
+        {
+            "text": "jQueryMoblie",
+            "desc": "jQueryMoblie API & DOC",
+            "icon": "book",
+            "path": "#/books/jQueryMoblie",
+        }]
+    },
+    {
+        "text": "work",
+        "desc": "项目/工作/产品",
+        "icon": "product-hunt",
+        "path": "",
+        "children": [
+        {
+            "text": "MAll",
+            "desc": "三件分销商品",
+            "icon": "home",
+            "path": "#/work/f2e",
+        },
+        {
+            "text": "Admin",
+            "desc": "后台模板",
+            "icon": "home",
+            "path": "#/work/b2e",
+        }]
+    },
+    {
+        "text": "tool",
+        "desc": "工具",
+        "icon": "linode",
+        "path": "",
+        "children": [
+        {
+            "text": "Color",
+            "desc": "调色板",
+            "icon": "home",
+            "path": "#/tool/color",
+        },
+        {
+            "text": "REM",
+            "desc": "PX转REM",
+            "icon": "font",
+            "path": "#/tool/rem",
+        }]
+    },
+    {
+        "text": "game",
+        "desc": "游戏",
+        "icon": "gamepad",
+        "path": "",
+        "children": [
+        {
+            "text": "Tetris",
+            "desc": "俄罗斯方块",
+            "icon": "home",
+            "path": "#/game/tetris",
+        },
+        {
+            "text": "Snaker",
+            "desc": "贪吃蛇",
+            "icon": "home",
+            "path": "#/game/Snaker",
+        }]
+    }],
+    "sys": [
+    {
+        "text": "今日签",
+        "desc": "签到领几",
+        "icon": "za",
+        "path": "",
+        "children": []
+    },
+    {
+        "text": "个人设",
+        "desc": "个人设",
+        "icon": "use",
+        "path": "",
+        "children": []
+    },
+    {
+        "text": "发布需",
+        "desc": "发布需",
+        "icon": "o",
+        "path": "",
+        "children": []
+    },
+    {
+        "text": "退",
+        "desc": "退",
+        "icon": "game ove",
+        "path": "",
+        "children": []
+    }],
+    "user":
+    {
+        "nickname": "vser",
+        "grade": "管理",
+        "star": 88775,
+        "wateing": 5576855,
+        "account": "vser",
+        "email": "vsery@163.co",
+        "password": "!@#ASDqweZX",
+        "token": "bD3@hD4@gC2|rB4?cJ1#lB1`bB7@qC4{fI2;bD7~tE2?dB2%nU2$fD6ebN1",
+        "avatar": "static\\images\\header\\image_haeder.jpg"
+    },
+    "indexBanner": [
+    {
+        "pic": "/static/images/wallpaper_0.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_1.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_2.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_3.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_4.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_5.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_6.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_7.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_8.jpg"
+    },
+    {
+        "pic": "/static/images/wallpaper_9.jpg"
+    }],
+    "search":
+    {
+        "desc": "Vsery 位您 <span class=\"package-amount\">共收录了 <strong>3107</strong> 篇本章</span>",
+        "click": "searchTitle()"
+    },
+    "donorsNumber": "1,512",
+    "viewNumber": "15,258,441,000",
+    "downloadNumber": "29,918,512",
+    "downBtn":
+    {
+        "state": true,
+        "title": "The Small Business Data Platform for Marketers [营销人员的小企业数据平台]",
+        "body": "Vsery brings all the small business data you need together so you can target acquisition campaigns across any channel.[vsery带来的所有小企业的数据需要在一起,所以你可以通过各种渠道获取运动目标.]",
+        "downSrc": "https://download.sublimetext.com/Sublime Text Build 3126 x64 Setup.exe"
+    },
+    "modules":
+    {
+        "state": true,
+        "title": "Modules that empower your business",
+        "function": [
+        {
+            "title": "Daily Tasks",
+            "description": "Forget your papers - the single ZAAR App does it! Features permit you to easily allocate tasks no matter where you are",
+            "icon": "/static/images/icon/task.png",
+            "iconTitle": "Manage Labor Controller"
+        },
+        {
+            "title": "Cloud Storage",
+            "description": "Reliable, Efficient and Cost-Effective Storage, easy access to your data even when you are not in the field",
+            "icon": "/static/images/icon/cloud.png",
+            "iconTitle": "Manage Suppliers"
+        },
+        {
+            "title": "Daily Report",
+            "description": "Track your Project - Allows for consistent productivity evaluation",
+            "icon": "/static/images/icon/daily-report.png",
+            "iconTitle": "Manage Daily Task"
+        },
+        {
+            "title": "Manage Plan",
+            "description": "Revisions simplified - We understand that drawings are at the foundation of your projects",
+            "icon": "/static/images/icon/drawing.png",
+            "iconTitle": "Manage Daily Reports"
+        },
+        {
+            "title": "Labor Reports",
+            "description": "Smart scheduling, tracking and reporting to support productivity",
+            "icon": "/static/images/icon/labor.png",
+            "iconTitle": "Manage Plan Drawing"
+        },
+        {
+            "title": "Project Statistics",
+            "description": "Graphing and visuals can enhance reporting - Flexible and customized reporting options allow impressive tracking and sharing",
+            "icon": "/static/images/icon/statistical.png",
+            "iconTitle": "Project Statistical Report"
+        }],
+        "mobile": "/static/images/icon/home-new.png"
+    },
+    "system": [
+    {
+        "title": "置顶",
+        "icon": "arrow-up",
+        "click": "gotop()"
+    },
+    {
+        "title": "订阅",
+        "icon": "ree-square",
+        "click": "feed()"
+    },
+    {
+        "title": "分享",
+        "icon": "share-square",
+        "click": "share()"
+    },
+    {
+        "title": "反馈",
+        "icon": "paper-plane",
+        "click": "feedback()"
+    },
+    {
+        "title": "链接",
+        "icon": "link",
+        "click": "link()"
+    },
+    {
+        "title": "音乐",
+        "icon": "music",
+        "click": "music()"
+    }]
+}

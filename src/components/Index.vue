@@ -1,9 +1,141 @@
 <template>
     <div :class="['index ']+page_skin">
         <navs-view></navs-view>
-        <!-- <bread-view></bread-view> -->
         <carousel-view></carousel-view>
-        <div class="mostused-packages well well-sm text-center hidden-xs hidden-sm">
+        <section class="fun-fact-wrap fun-facts-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 facts-in">
+                        <h3><span class="counter">{{viewNumber}}</span></h3>
+                        <h4>查看人数</h4>
+                    </div>
+                    <div class="col-md-4 facts-in">
+                        <h3><span class="counter">{{downloadNumber}}</span></h3>
+                        <h4>下载人数</h4>
+                    </div>
+                    <div class="col-md-4 facts-in">
+                        <h3><span class="counter">{{donorsNumber}}</span></h3>
+                        <h4>捐赠人数</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container img-responsive">
+            <div class="transparent">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="center-heading">
+                            <h2><strong>The Small Business Data Platform for Marketers</strong> </h2>
+                            <span class="center-line"></span>
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <p class="sub-text margin40 center-heading"><strong>
+                                        Vsery brings all the small business data you need together so you can target acquisition campaigns across any channel.</strong></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a type="button" class="btn btn-default btn-lg" onclick="ga('send', 'event', 'try-free', 'click', 'home-above-fold');" href="https://tools.tidewater.io/signup">
+                                  try free
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="modules">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 bottom">
+                        <h2>Modules that empower your business</h2>
+                        <hr class="amazing-hr">
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <div class="col-md-12 col-sm-12 col-xs-12"><img src="/static/images/icon/labor.png" title="Manage Labor Controller" alt="Manage Labor Controller"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">Manage Labor Controller</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <div class="col-md-12 col-sm-12 col-xs-12"><img src="/static/images/icon/equipment.png" title="Manage Suppliers" alt="Manage Suppliers"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">Manage Suppliers</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <div class="col-md-12 col-sm-12 col-xs-12"><img src="/static/images/icon/task.png" title="Manage Daily Task" alt="Manage Daily Task"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">Manage Daily Task</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <div class="col-md-12 col-sm-12 col-xs-12"><img src="/static/images/icon/daily-report.PNG" title="Manage Daily Reports" alt="Manage Daily Reports"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">Manage Daily Reports</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <div class="col-md-12 col-sm-12 col-xs-12"><img src="/static/images/icon/drawing.PNG" title="Manage Plan Drawing" alt="Manage Plan Drawing"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">Manage Plan Drawing</div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-6">
+                            <div class="col-md-12 col-sm-12 col-xs-12"><img src="/static/images/icon/statistical.png" title="Project Statistical Report" alt="Project Statistical Report"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">Project Statistical Report</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 text-right features-left wow fadeInLeft  animated" data-wow-offset="10" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">
+                    <div class="feature_highlight">
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Daily Tasks </h4>
+                            <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_left">Forget your papers - the single ZAAR App does it! Features permit you to easily allocate tasks no matter where you are</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="/static/images/icon/task.png" title="Daily Tasks" alt="Daily Tasks"></div>
+                    </div>
+                    <div class="feature_highlight">
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Cloud Storage </h4>
+                            <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_left">Reliable, Efficient and Cost-Effective Storage, easy access to your data even when you are not in the field</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="/static/images/icon/cloud.PNG" title="Cloud Storage" alt="Cloud Storage"></div>
+                    </div>
+                    <div class="feature_highlight">
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Daily Report </h4>
+                            <p class="col-md-12  col-sm-12 col-xs-12 amazing_content_left">Track your Project - Allows for consistent productivity evaluation</p>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="/static/images/icon/daily-report.PNG" title="Daily Report" alt="Daily Report"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="phone-img wow bounceIn animated" data-wow-offset="120" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: bounceIn;">
+                        <img src="/static/images/icon/home-new.png" alt="ZAAR Android App" title="ZAAR Android App" class="ful-width1">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 text-left features-right wow fadeInRight  animated" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInRight;">
+                    <div class="feature_highlight">
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="/static/images/icon/drawing.PNG" title="Manage Plan" alt="Manage Plan"></div>
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Manage Plan</h4>
+                            <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_right"> Revisions simplified - We understand that drawings are at the foundation of your projects</p>
+                        </div>
+                    </div>
+                    <div class="feature_highlight">
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="/static/images/icon/labor.png" title="Labor Reports" alt="Labor Reports"></div>
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Labor Reports</h4>
+                            <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_right">Smart scheduling, tracking and reporting to support productivity</p>
+                        </div>
+                    </div>
+                    <div class="feature_highlight">
+                        <div class="col-md-2 col-sm-2 col-xs-2"><img src="/static/images/icon/statistical.png" title="Project Statistics" alt="Project Statistics"></div>
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Project Statistics</h4>
+                            <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_right">Graphing and visuals can enhance reporting - Flexible and customized reporting options allow impressive tracking and sharing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <bread-view></bread-view> -->
+        <!-- <div class="mostused-packages well well-sm text-center hidden-xs hidden-sm">
             <ul class="list-inline">
                 <li>
                     <a href="/bootstrap/" title="Bootstrap" target="_blank" onclick="_hmt.push(['_trackEvent', 'mostused', 'click', 'mostused-bootstrap'])">
@@ -46,50 +178,8 @@
             </a>
                 </li>
             </ul>
-        </div>
-        <section class="fun-fact-wrap fun-facts-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 facts-in">
-                        <h3><span class="counter">29,918,512</span></h3>
-                        <h4>US COMPANIES</h4>
-                    </div>
-                    <!--facts in-->
-                    <div class="col-md-6 facts-in">
-                        <h3><span class="counter">15,258,441,000</span></h3>
-                        <h4>DATA POINTS</h4>
-                    </div>
-                    <!--facts in-->
-                </div>
-            </div>
-        </section>
-        <div class="container-bg img-responsive">
-            <div class="transparent">
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <div class="center-heading">
-                            <h2 style="color:white; padding-top:50px"><strong>The Small Business Data Platform for Marketers</strong> </h2>
-                            <span class="center-line"></span>
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <p class="sub-text margin40 center-heading" style="color:white;"><strong>
-                                        Tidewater brings all the small business data you need together so you can target acquisition campaigns across any channel.</strong></p>
-                                </div>
-                            </div>
-                            <div class="divide40"></div>
-                            <div>
-                                <!-- Button trigger modal -->
-                                <a type="button" class="btn btn-default btn-lg" onclick="ga('send', 'event', 'try-free', 'click', 'home-above-fold');" href="https://tools.tidewater.io/signup">
-                                  Try Free
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--center heading end-->
-            </div>
-        </div>
-        <div class="container protocal-notice hidden-xs">
+        </div> -->
+        <!-- <div class="container protocal-notice hidden-xs">
             <div class="row">
                 <div class="col-xs-12">
                     <form class="form-inline pull-right">
@@ -108,8 +198,8 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <section class="integrations">
+        </div> -->
+        <!-- <section class="integrations">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1">
@@ -150,8 +240,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <div id="features">
+        </section> -->
+        <!-- <div id="features">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-sm-12 col-xs-12 col-md-8 col-lg-offset-2 col-md-offset-2 text-center">
@@ -161,8 +251,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="what-is">
+        </div> -->
+        <!-- <section class="what-is">
             <div class="container">
                 <div class="row">
                     <div class="hidden-xs">
@@ -217,126 +307,34 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="carousel slide" id="sliderCarousel" data-ride="carousel">
-            <!-- Carousel indicators -->
+        </section> -->
+        <!-- <div class="carousel slide" id="sliderCarousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#sliderCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#sliderCarousel" data-slide-to="1"></li>
             </ol>
-            <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="active item b1_img">
-                    <!-- <div class="background_shadow"></div> -->
+                    <div class="background_shadow"></div>
                     <div class="profile-circle img1" style="background-position: 50% 0px;">
-                        <!-- <img src="http://www.zaarapp.com/assets/images/banners-one.png" alt="client" /> --></div>
+                        <img src="http://www.zaarapp.com/assets/images/banners-one.png" alt="client" /></div>
                     <div class="banner_right wow bounceInRight  animated" data-wow-offset="10" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: bounceInRight;">
                         <img src="http://www.zaarapp.com/assets/images/hand-with-tab-large.png" alt="img">
                     </div>
                 </div>
                 <div class="item b2_img">
-                    <!-- <div class="background_shadow"></div> -->
+                    <div class="background_shadow"></div>
                     <div class="profile-circle img2" style="background-position: 50% 0px;">
-                        <!-- <img src="http://www.zaarapp.com/assets/images/banners-two.png" alt="client" /> --></div>
+                        <img src="http://www.zaarapp.com/assets/images/banners-two.png" alt="client" /></div>
                     <div class="banner_right wow bounceInDown animated animated" data-wow-offset="10" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: bounceInDown;">
                         <img src="http://www.zaarapp.com/assets/images/3dcopy.png" alt="img">
                     </div>
                 </div>
-                <!-- Carousel Buttons Next/Prev -->
-                <!-- <a data-slide="prev" href="#sliderCarousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-              <a data-slide="next" href="#sliderCarousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a> -->
+                <a data-slide="prev" href="#sliderCarousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+              <a data-slide="next" href="#sliderCarousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
             </div>
-        </div>
-        <section class="modules">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12 bottom">
-                        <h1>Modules that empower your business</h1>
-                        <hr class="amazing-hr">
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <span class="col-md-2 col-sm-2 col-xs-6">
-          <span class="col-md-3 col-sm-12 col-xs-12"><img src="http://www.zaarapp.com/assets/images/labor.png" title="Manage Labor Controller" alt="Manage Labor Controller"></span>
-                        <span class="col-md-12 col-sm-12 col-xs-12">Manage Labor Controller</span>
-                        </span>
-                        <span class="col-md-2 col-sm-2 col-xs-6">
-          <span class="col-md-3 col-sm-12 col-xs-12"><img src="http://www.zaarapp.com/assets/images/equipment.png" title="Manage Suppliers" alt="Manage Suppliers"></span>
-                        <span class="col-md-12 col-sm-12 col-xs-12">Manage Suppliers</span>
-                        </span>
-                        <span class="col-md-2 col-sm-2 col-xs-6">
-          <span class="col-md-3 col-sm-12 col-xs-12"><img src="http://www.zaarapp.com/assets/images/task.png" title="Manage Daily Task" alt="Manage Daily Task"></span>
-                        <span class="col-md-12 col-sm-12 col-xs-12">Manage Daily Task</span>
-                        </span>
-                        <span class="col-md-2 col-sm-2 col-xs-6">
-          <span class="col-md-3 col-sm-12 col-xs-12"><img src="http://www.zaarapp.com/assets/images/daily-report.PNG" title="Manage Daily Reports" alt="Manage Daily Reports"></span>
-                        <span class="col-md-12 col-sm-12 col-xs-12">Manage Daily Reports</span>
-                        </span>
-                        <span class="col-md-2 col-sm-2 col-xs-6">
-          <span class="col-md-3 col-sm-12 col-xs-12"><img src="http://www.zaarapp.com/assets/images/drawing.PNG" title="Manage Plan Drawing" alt="Manage Plan Drawing"></span>
-                        <span class="col-md-12 col-sm-12 col-xs-12">Manage Plan Drawing</span>
-                        </span>
-                        <span class="col-md-2 col-sm-2 col-xs-6">
-          <span class="col-md-3 col-sm-12 col-xs-12"><img src="http://www.zaarapp.com/assets/images/statistical.png" title="Project Statistical Report" alt="Project Statistical Report"></span>
-                        <span class="col-md-12 col-sm-12 col-xs-12">Project Statistical Report</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12 text-right features-left wow fadeInLeft  animated" data-wow-offset="10" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInLeft;">
-                <div class="feature_highlight">
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Daily Tasks </h4>
-                        <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_left">Forget your papers - the single ZAAR App does it! Features permit you to easily allocate tasks no matter where you are</p>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="http://www.zaarapp.com/assets/images/task.png" title="Daily Tasks" alt="Daily Tasks"></div>
-                </div>
-                <div class="feature_highlight">
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Cloud Storage </h4>
-                        <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_left">Reliable, Efficient and Cost-Effective Storage, easy access to your data even when you are not in the field</p>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="http://www.zaarapp.com/assets/images/cloud.PNG" title="Cloud Storage" alt="Cloud Storage"></div>
-                </div>
-                <div class="feature_highlight">
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Daily Report </h4>
-                        <p class="col-md-12  col-sm-12 col-xs-12 amazing_content_left">Track your Project - Allows for consistent productivity evaluation</p>
-                    </div>
-                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="http://www.zaarapp.com/assets/images/daily-report.PNG" title="Daily Report" alt="Daily Report"></div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="phone-img wow bounceIn  animated" data-wow-offset="120" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: bounceIn;">
-                    <img src="http://www.zaarapp.com/assets/images/home-new.png" alt="ZAAR Android App" title="ZAAR Android App" class="ful-width1">
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-12 text-left features-right wow fadeInRight  animated" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInRight;">
-                <div class="feature_highlight">
-                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="http://www.zaarapp.com/assets/images/drawing.PNG" title="Manage Plan" alt="Manage Plan"></div>
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Manage Plan</h4>
-                        <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_right"> Revisions simplified - We understand that drawings are at the foundation of your projects</p>
-                    </div>
-                </div>
-                <div class="feature_highlight">
-                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="http://www.zaarapp.com/assets/images/labor.png" title="Labor Reports" alt="Labor Reports"></div>
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Labor Reports</h4>
-                        <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_right">Smart scheduling, tracking and reporting to support productivity</p>
-                    </div>
-                </div>
-                <div class="feature_highlight">
-                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="http://www.zaarapp.com/assets/images/statistical.png" title="Project Statistics" alt="Project Statistics"></div>
-                    <div class="col-md-10 col-sm-10 col-xs-10">
-                        <h4 class="col-md-12 col-sm-12 col-xs-12 amazing_head"> Project Statistics</h4>
-                        <p class="col-md-12 col-sm-12 col-xs-12 amazing_content_right">Graphing and visuals can enhance reporting - Flexible and customized reporting options allow impressive tracking and sharing</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="switchable switchable--switch bg--secondary">
+        </div> -->
+        <!-- <section class="switchable switchable--switch bg--secondary">
             <div class="container">
                 <div class="row">
                     <div class="text-center col-sm-6">
@@ -371,8 +369,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="text-center">
+        </section> -->
+        <!-- <section class="text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4">
@@ -404,8 +402,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="switchable switchable--switch bg--secondary">
+        </section> -->
+        <!-- <section class="switchable switchable--switch bg--secondary">
             <div class="container">
                 <div class="row">
                     <div class="text-center col-sm-6">
@@ -440,8 +438,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <main class="packages-list-container" id="all-packages">
+        </section> -->
+        <!-- <main class="packages-list-container" id="all-packages">
             <div class="container">
                 <div class="list-group packages" id="common-packages">
                     <a href="/bootstrap/" class="package list-group-item" target="_blank" onclick="_hmt.push(['_trackEvent', 'packages', 'click', 'bootstrap'])">
@@ -626,8 +624,8 @@
                     </a><a href="/all/" class="package list-group-item all-packages" target="_blank" onclick="_hmt.push(['_trackEvent', 'packages', 'click', 'all'])">所有开源项目列表</a></div>
                 <div class="list-group packages" id="search-results" style="display: none"></div>
             </div>
-        </main>
-        <footer id="footer" class="footer hidden-print">
+        </main> -->
+        <!-- <footer id="footer" class="footer hidden-print">
             <div class="container">
                 <div class="row">
                     <div class="footer-about col-md-5 col-sm-12" id="about">
@@ -669,7 +667,7 @@
                 </div>
             </div>
             <div class="copy-right"><span>© 2013-2017</span> <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a> <span>京公网安备11010802014853</span></div>
-        </footer>
+        </footer> -->
         <!-- <h1>{{ msg }}</h1>
         <h2>Essential Links</h2>
         <ul>
@@ -687,24 +685,30 @@
             <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
             <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
         </ul> -->
+        <sys-view></sys-view>
     </div>
 </template>
 <script>
-import navs from '@/components/navigation'      //导航菜单
-import bread from '@/components/breadcrumb'     //面包屑导航
-import carousel from '@/components/carousel'     //面包屑导航
+import navs from '@/components/navigation' //导航菜单
+import bread from '@/components/breadcrumb' //面包屑导航
+import carousel from '@/components/carousel' //面包屑导航
+
+import sys from '@/components/sys' //系统功能
 export default {
     name: 'index',
     data() {
         return {
-            // msg: 'Welcome to Your Vue.js App',
             page_skin: 'default',
+            donorsNumber: '1,512', // 捐赠人数
+            viewNumber: '15,258,441,000', // 查看人数
+            downloadNumber: '29,918,512', // 下载人数
         }
     },
     components: {
         "navs-view": navs,
         "bread-view": bread,
-        "carousel-view": carousel
+        "carousel-view": carousel,
+        "sys-view": sys,
     }
 }
 
@@ -726,6 +730,14 @@ li {
 }
 
 a {
+    color: #42b983;
+}
+
+.fun-facts-bg {
+    background-color: lightgray;
+}
+
+span.counter {
     color: #42b983;
 }
 
